@@ -103,11 +103,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science; GPA: 4.00}{Aug 2012 -- Dec 2013}
-    \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics; GPA: 3.66 (9.15/10.0)}{Aug 2008 -- July 2012}
+      {Oregon State University}{Corvallis, OR}
+      {Bachelors of Science in Computer Science, Minor Psychology}{Fall 2005 -- Spring 2010}
   \resumeSubHeadingListEnd
 
 
@@ -115,16 +112,87 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 -- Present}
-      \resumeItemListStart
-        \resumeItem{TensorFlow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-      \resumeItemListEnd
-      
+\resumeSubheading
+  {Ride with GPS}{Portland, OR}
+  {Staff Modern Linux Systems and Software Engineer}{Feb 2024 -- Apr 2025}
+  \resumeItemListStart
+    \resumeItem{Argo Workflows}
+      {Led adoption for CI/CD and data pipelines; integrated with Rails tooling.}
+    \resumeItem{Kubernetes Administration}
+      {Managed staging deployments and planned legacy production migration.}
+    \resumeItem{Observability}
+      {Maintained stack: Grafana, Prometheus, Elasticsearch, Kibana, Sensu, Munin.}
+    \resumeItem{Automation}
+      {Used Ansible and Python to manage bare metal hardware configuration.}
+    \resumeItem{Data Center Ops}
+      {Upgraded frontend systems and network hardware for redundancy.}
+    \resumeItem{On-Call}
+      {Participated in PagerDuty rotation for incident response.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {OpenGov}{Remote}
+  {Staff \& Senior Software Engineer (Delivery Engineering)}{Jul 2020 -- Jan 2024}
+  \resumeItemListStart
+    \resumeItem{CI/CD Modernization}
+      {Migrated from Jenkins/Spinnaker to GitHub Actions and ArgoCD; built open-source Actions.}
+    \resumeItem{AI \& Internal Tools}
+      {Prototyped PR Review Bot using LangChain; managed OpenAI Org access.}
+    \resumeItem{Access Control}
+      {Architected org-wide RBAC via Terraform for AWS and Kubernetes using Teleport.}
+    \resumeItem{Infrastructure as Code}
+      {Built and tested Terraform modules with Terratest (Go).}
+    \resumeItem{SRE \& Dev Enablement}
+      {Led Kubernetes, Helm, Docker, AWS, and observability efforts; supported on-call via OpsGenie.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Puppet}{Portland, OR}
+  {Senior Software Engineer (Dev Infrastructure Ops)}{Aug 2018 -- Jul 2020}
+  \resumeItemListStart
+    \resumeItem{Observability}
+      {Unified logging (FluentD) and tracing with OpenTracing.}
+    \resumeItem{Cloud Migration}
+      {Migrated Jenkins and Ruby services to GKE; supported vSphere, Mesos, Docker.}
+    \resumeItem{Team Leadership}
+      {Served as Scrum Master and Product Owner; drove backlog alignment and cross-team communication.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Puppet (formerly Puppet Labs)}{Portland, OR}
+  {Software Engineer (Puppet Enterprise Installer)}{Dec 2013 -- Aug 2018}
+  \resumeItemListStart
+    \resumeItem{Installer \& Orchestrator}
+      {Co-architected GUI Installer and Orchestrator using Ruby/Sinatra.}
+    \resumeItem{Open Source Contributions}
+      {Created Chloride SSH library, ruby-pathspec, and rubocop-i18n.}
+    \resumeItem{CI Tooling}
+      {Developed internal Jenkins tools and shared Groovy libraries.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Facebook Inc.}{Menlo Park, CA}
+  {Site Reliability Engineer}{May 2012 -- Nov 2013}
+  \resumeItemListStart
+    \resumeItem{Tooling}
+      {Built Python tools for incident remediation and infrastructure audit.}
+    \resumeItem{Platform Migration}
+      {Supported shift to in-house containerization (CGroups-based, Borg-like).}
+    \resumeItem{On-Call}
+      {Handled production incidents as part of SRE rotation.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Flashlight LLC}{Portland, OR}
+  {Software Engineer}{Sep 2010 -- Apr 2012}
+  \resumeItemListStart
+    \resumeItem{UI Development}
+      {Built Groovy/Grails/jQuery frontend for cable STB control.}
+    \resumeItem{Automation}
+      {Automated dev environment setup with Puppet.}
+  \resumeItemListEnd
+
+
 % --------Multiple Positions Heading------------
   %  \resumeSubSubheading
   %   {Software Engineer I}{Oct 2014 -- Sep 2016}
@@ -134,50 +202,6 @@
   %   \resumeItemListEnd
 
 %-------------------------------------------
-
-    \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 -- Oct 2016}
-      \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowdsourcing platform which allowed for creating various tasks for crowdsourcing or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on Docker and AWS, standardized the Python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Used this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
-      \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging, portfolio optimization and price forecasting. Also created a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 -- Dec 2013}
-      \resumeItemListStart
-        \resumeItem{Research Assistant -- Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the Python library QSTK.}
-        \resumeItem{Teaching Assistant -- Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
