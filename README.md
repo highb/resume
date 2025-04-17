@@ -2,9 +2,7 @@ A single-page, one-column resume for software developers. It uses the base latex
 
 ### Motivation
 
-I created this template as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
-
-Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
+I copied this template from [Sourabh Bajaj's excellent example](https://github.com/sb2nov/resume) as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
 
 ### Quick start
 
