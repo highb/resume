@@ -26,6 +26,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+% Custom Bullets
+\renewcommand{\labelitemi}{\textsc{}}
+
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -50,7 +53,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+\item[\textgreater]\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
@@ -205,30 +208,62 @@
 
   \resumeSubHeadingListEnd
 
+%-----------CERTIFICATIONS-----------
+\section{Certifications and Post-Academic Education}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Kubernetes Certified Application Developer}
+      {Linux Foundation – 2021}
+    \resumeSubItem{Machine Learning Nanodegree}
+      {Udacity – Jan 2017 to Jul 2017; coursework included Linear Regression, Neural Networks, and TensorFlow}
+    \resumeSubItem{Docker Certified Associate}
+      {Docker – Jun 2018 to Jun 2020 (Expired)}
+    \resumeSubItem{Puppet Professional Certification}
+      {Puppet – May 2015}
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source Python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{GitHub Visualization}
-      {Data visualization of Git log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+    \resumeSubItem{\href{https://github.com/highb/asdf-teleport-ent}{asdf-teleport-ent}}
+      {Open source asdf plugin for managing Teleport CLI versions.}
+    \resumeSubItem{\href{https://github.com/highb/bad-parrots}{bad-parrots}}
+      {Open source collection of scripts for working with local LLMs in Docker.}
+    \resumeSubItem{\href{https://github.com/highb/pathspec-ruby}{pathspec-ruby}}
+      {Open source Ruby library for parsing .gitignore-like files.}
   \resumeSubHeadingListEnd
 
-%
 %--------SKILLS------------
-%\section{Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, JavaScript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Ruby, Python, JavaScript, C, Go, Rust, SQL}
+    }
+    \item{
+      \textbf{CI/CD}{: GitHub Actions, Argo Workflows/CD/Events, CircleCI, Jenkins, Spinnaker}
+    }
+    \item{
+      \textbf{Infrastructure \& Automation}{: Terraform, Kubernetes, Helm, Kustomize, Ansible, Puppet, Docker}
+    }
+    \item{
+      \textbf{Cloud}{: AWS, GCP}
+    }
+    \item{
+      \textbf{Observability \& Monitoring}{: Prometheus, Grafana, Elasticsearch, Kibana, FluentD, OpenTracing, Sensu, Munin}
+    }
+    \item{
+      \textbf{Security \& Access Control}{: RBAC, Teleport, IAM (AWS)}
+    }
+    \item{
+      \textbf{AI/LLM}{: OpenAI API, LangChain}
+    }
+    \item{
+      \textbf{Testing \& Dev Tools}{: Terratest (Go), Git, VSCode, Groovy (Jenkins Pipelines)}
+    }
+    \item{
+      \textbf{Operating Systems}{: Ubuntu, Debian, CentOS, Arch Linux, Gentoo, macOS, Windows, Raspbian}
+    }
+  \resumeSubHeadingListEnd
+
 
 
 %-------------------------------------------
