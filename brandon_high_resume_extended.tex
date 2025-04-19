@@ -1,0 +1,337 @@
+%-------------------------
+% Extended Resume in LaTeX
+% Author : Brandon High
+% Based on original resume by Brandon High
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Custom Bullets
+\renewcommand{\labelitemi}{\textsc{}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+\item[\textsc{}]\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% New command for paragraph text
+\newcommand{\resumeParagraph}[1]{
+  \vspace{-5pt}
+  \begin{itemize}[leftmargin=*]
+  \item[]
+    #1
+  \end{itemize}
+  \vspace{-5pt}
+}
+
+%-------------------------------------------
+%%%%%%  EXTENDED RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://bmh.io/}{\Large Brandon High}} & Email: \href{mailto:hire@bmh.io}{hire@bmh.io}\\
+  \href{https://bmh.io/}{bmh.io} & LinkedIn: \href{https://www.linkedin.com/in/brandonhighthesoftwareguy/}{brandonhighthesoftwareguy}\\
+  \href{https://github.com/highb}{github.com/highb} & Blog: \href{https://blog.bmh.io}{blog.bmh.io}
+\end{tabular*}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+\resumeParagraph{
+Highly experienced Staff Software Engineer with 15+ years of expertise in DevOps, infrastructure automation, and cloud technologies. Specialized in developing innovative solutions for complex technical challenges while maintaining a strong commitment to open source contributions. Proven track record of implementing cutting-edge CI/CD pipelines, securing infrastructure through comprehensive RBAC, and mentoring junior engineers. Skilled in remote collaboration with global teams, combining deep technical knowledge with effective leadership and communication abilities.
+}
+
+%-----------CORE COMPETENCIES-----------------
+\section{Core Competencies}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*]
+    \item Infrastructure Automation
+    \item CI/CD Pipeline Development
+    \item Cloud Architecture (AWS, GCP)
+    \item Kubernetes Administration
+    \item Open Source Development
+    \item Security Implementation
+    \item System Design \& Architecture
+    \item Technical Leadership
+    \item Mentorship \& Team Development
+    \item Remote Collaboration
+    \item Technical Documentation
+\end{itemize}
+\end{multicols}
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ride with GPS}{Portland, OR}
+      {Staff Modern Linux Systems and Software Engineer}{Feb 2024 -- Apr 2025}
+      \resumeItemListStart
+        \resumeItem{Argo Workflows Implementation}
+          {Led the company-wide adoption of Argo Workflows for CI/CD and data pipelines, creating seamless integration with existing Rails applications while improving pipeline reliability and efficiency.}
+        \resumeItem{Kubernetes Administration}
+          {Managed staging Kubernetes deployments while architecting the migration strategy for legacy production systems, implementing comprehensive monitoring and auto-scaling solutions to improve overall resource utilization.}
+        \resumeItem{Observability Infrastructure}
+          {Maintained and enhanced the comprehensive observability stack (Grafana, Prometheus, Elasticsearch, Kibana, Sensu, Munin), implementing automated alerting based on performance anomalies and improving incident detection capabilities.}
+        \resumeItem{Infrastructure Automation}
+          {Leveraged Ansible and Python to automate hardware configuration management across the infrastructure, significantly reducing configuration drift and deployment time for new hardware.}
+        \resumeItem{Data Center Operations}
+          {Planned and executed strategic upgrades to frontend systems and network hardware, implementing redundancy that eliminated single points of failure and improved overall system reliability.}
+        \resumeItem{Incident Response}
+          {Actively participated in the PagerDuty on-call rotation, coordinating incident responses and leading post-mortem analyses that identified actionable improvements to system resilience.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {OpenGov}{Remote}
+      {Staff \& Senior Software Engineer (Delivery Engineering)}{Jul 2020 -- Jan 2024}
+      \resumeItemListStart
+        \resumeItem{CI/CD Modernization}
+          {Led the strategic migration from Jenkins/Spinnaker to GitHub Actions and ArgoCD, developing and open-sourcing custom Actions that improved deployment reliability and enhanced pipeline visibility across the organization.}
+        \resumeItem{AI Tool Development}
+          {Designed and implemented a PR Review Bot using LangChain and OpenAI, automating code reviews for common issues and best practices, which streamlined the review feedback cycle and improved overall code quality.}
+        \resumeItem{Enterprise Access Control}
+          {Architected and implemented organization-wide Role-Based Access Control via Terraform for both AWS and Kubernetes resources using Teleport, securing SOC 2 compliance while maintaining developer productivity.}
+        \resumeItem{Infrastructure as Code Excellence}
+          {Built and maintained modular Terraform components with comprehensive automated testing via Terratest (Go), enabling reliable infrastructure deployments and minimizing provisioning errors.}
+        \resumeItem{SRE Leadership}
+          {Spearheaded initiatives in Kubernetes, Helm, Docker, AWS, and observability while providing technical mentorship to the India development team, improving cross-team collaboration and reducing knowledge silos.}
+        \resumeItem{Documentation Strategy}
+          {Introduced and implemented the DIVIO documentation system, organizing documentation into tutorials, how-to guides, explanations, and reference material to improve accessibility and knowledge transfer.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Puppet}{Portland, OR}
+      {Senior Software Engineer (Dev Infrastructure Ops)}{Aug 2018 -- Jul 2020}
+      \resumeItemListStart
+        \resumeItem{Observability Integration}
+          {Unified logging infrastructure with FluentD and implemented distributed tracing with OpenTracing, providing end-to-end visibility into service performance and improving mean time to resolution for production issues.}
+        \resumeItem{Cloud Migration Strategy}
+          {Successfully migrated Jenkins CI infrastructure and Ruby services to Google Kubernetes Engine while maintaining backward compatibility with vSphere, Mesos, and Docker environments, resulting in significant infrastructure cost savings.}
+        \resumeItem{Team Leadership}
+          {Served dual roles as both Scrum Master and Product Owner, facilitating agile processes while driving backlog alignment and cross-team communication to ensure efficient development workflows and improved delivery predictability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Puppet (formerly Puppet Labs)}{Portland, OR}
+      {Software Engineer (Puppet Enterprise Installer)}{Dec 2013 -- Aug 2018}
+      \resumeItemListStart
+        \resumeItem{Enterprise Application Development}
+          {Co-architected the GUI Installer and Orchestrator components using Ruby/Sinatra, significantly enhancing the user experience for Puppet Enterprise installations and reducing deployment complexity.}
+        \resumeItem{Open Source Contributions}
+          {Created and maintained several impactful open source projects including the Chloride SSH library, ruby-pathspec for parsing .gitignore-like files, and rubocop-i18n for internationalization linting, collectively garnering hundreds of stars and forks on GitHub.}
+        \resumeItem{CI/CD Infrastructure}
+          {Developed internal Jenkins tools and shared Groovy libraries that standardized build processes across the organization, decreasing build failures and providing consistent deployment pipelines.}
+        \resumeItem{Mentorship}
+          {Mentored multiple college interns, guiding them through development practices and industry standards, with all mentees subsequently securing full-time positions with the company.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Facebook Inc.}{Menlo Park, CA}
+      {Site Reliability Engineer}{May 2012 -- Nov 2013}
+      \resumeItemListStart
+        \resumeItem{Automation Tooling}
+          {Developed Python-based tools for incident remediation and infrastructure audit, automating routine maintenance tasks and enabling rapid response to production incidents at scale.}
+        \resumeItem{Platform Migration}
+          {Supported the company's transition to in-house containerization using CGroups-based, Borg-like systems, contributing to improved resource utilization and application isolation.}
+        \resumeItem{Production Reliability}
+          {Handled critical production incidents as part of the SRE rotation, performing real-time troubleshooting and implementing long-term solutions to prevent recurrence of similar issues.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Flashlight LLC}{Portland, OR}
+      {Software Engineer}{Sep 2010 -- Apr 2012}
+      \resumeItemListStart
+        \resumeItem{User Interface Development}
+          {Built responsive Groovy/Grails/jQuery frontend applications for cable set-top box control, delivering intuitive user experiences for complex hardware interaction.}
+        \resumeItem{Development Automation}
+          {Pioneered the implementation of Puppet for automated development environment setup, standardizing configurations across the team and reducing onboarding time for new developers from days to hours.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------OPEN SOURCE CONTRIBUTIONS-----------------
+\section{Open Source Contributions}
+\resumeParagraph{
+My commitment to open source software spans my entire career, from my early days at Oregon State University's Open Source Lab to my current contributions. I maintain several personal projects including asdf-teleport-ent (plugin for managing Teleport CLI versions) and bad-parrots (scripts for working with local LLMs in Docker). My GitHub profile (github.com/highb) features 293+ repositories and numerous contributions across the DevOps and automation landscape. Notable contributions include:
+}
+\resumeItemListStart
+  \resumeItem{ruby-pathspec}
+    {Created and maintained a Ruby library for parsing .gitignore-like files, which has been adopted widely throughout the Ruby ecosystem for path pattern matching.}
+  \resumeItem{Chloride SSH}
+    {Developed an open source SSH library used within the Puppet ecosystem for remote execution and infrastructure management.}
+  \resumeItem{rubocop-i18n}
+    {Built a RuboCop extension for enforcing internationalization best practices in Ruby applications, improving accessibility for global users.}
+  \resumeItem{Open Source Community}
+    {Active contributor to various open source projects including Puppet modules, Terraform providers, and Kubernetes extensions, regularly participating in issue discussions and code reviews.}
+\resumeItemListEnd
+
+%-----------TECHNICAL EXPERTISE-----------------
+\section{Technical Expertise}
+\resumeSubHeadingListStart
+  \resumeSubItem{Languages}
+    {Ruby (expert), Python (expert), JavaScript (advanced), Go (advanced), Rust (intermediate), C (intermediate), SQL (advanced)}
+  \resumeSubItem{CI/CD Platforms}
+    {GitHub Actions (expert), Argo Workflows/CD/Events (expert), Jenkins (expert), CircleCI (advanced), Spinnaker (advanced)}
+  \resumeSubItem{Infrastructure \& Automation}
+    {Terraform (expert), Kubernetes (expert), Helm (expert), Kustomize (advanced), Ansible (advanced), Puppet (expert), Docker (expert)}
+  \resumeSubItem{Cloud Platforms}
+    {AWS (expert: EC2, S3, RDS, EKS, IAM, Lambda), GCP (advanced: GKE, GCE, Cloud Storage, BigQuery)}
+  \resumeSubItem{Observability \& Monitoring}
+    {Prometheus (expert), Grafana (expert), Elasticsearch (advanced), Kibana (advanced), FluentD (expert), OpenTracing (advanced), Sensu (intermediate), Munin (intermediate)}
+  \resumeSubItem{Security \& Access Control}
+    {RBAC implementation (expert), Teleport (expert), AWS IAM (expert), SOC 2 compliance (intermediate), Security architecture (advanced)}
+  \resumeSubItem{AI/LLM Integration}
+    {OpenAI API (advanced), OLlama (intermediate), LangChain (advanced), ML model integration (intermediate)}
+  \resumeSubItem{Testing \& Development Tools}
+    {Terratest (advanced), Git (expert), VSCode (expert), Groovy for Jenkins Pipelines (expert), Test-driven development (expert)}
+  \resumeSubItem{Operating Systems}
+    {Linux (expert: Ubuntu, Debian, CentOS, Arch, Gentoo), macOS (advanced), Windows (intermediate), Raspbian (advanced)}
+\resumeSubHeadingListEnd
+
+%-----------LEADERSHIP & COLLABORATION-----------------
+\section{Leadership \& Collaboration}
+\resumeParagraph{
+Throughout my career, I have demonstrated strong leadership abilities in both technical and team management capacities. As a remote worker since 2020, I've developed significant expertise in distributed team collaboration, working effectively with global teams at both Puppet and OpenGov. I balance connectivity with productivity by advocating for Cal Newport's Deep Work methodology, recognizing that focused concentration is essential for complex technical work.
+}
+\resumeItemListStart
+  \resumeItem{Team Leadership}
+    {Served as both Scrum Master and Product Owner at Puppet, facilitating agile ceremonies and ensuring alignment between technical execution and business objectives.}
+  \resumeItem{Technical Mentorship}
+    {Mentored numerous college interns and junior engineers throughout my career, with particular focus on infrastructure best practices, DevOps methodologies, and code quality.}
+  \resumeItem{Cross-functional Collaboration}
+    {Worked effectively across organizational boundaries, collaborating with development, QA, operations, and security teams to implement integrated solutions that meet diverse requirements.}
+  \resumeItem{Remote Work Excellence}
+    {Developed and implemented effective strategies for remote collaboration, including asynchronous communication practices and automated workflows that accommodate distributed teams across multiple time zones.}
+\resumeItemListEnd
+
+%-----------SYSTEM DESIGN & ARCHITECTURE-----------------
+\section{System Design \& Architecture}
+\resumeParagraph{
+I approach system design with a holistic understanding of business needs and technical challenges, carefully evaluating how new tools integrate into existing ecosystems to address specific friction points in software delivery. My architectural perspective balances immediate needs with long-term sustainability, considering factors such as scalability, maintainability, security, and operational efficiency.
+}
+\resumeItemListStart
+  \resumeItem{CI/CD Pipeline Architecture}
+    {Designed and implemented modern CI/CD architectures using GitHub Actions and ArgoCD, creating efficient workflows that support complex deployment scenarios while maintaining high reliability.}
+  \resumeItem{Kubernetes Infrastructure}
+    {Architected Kubernetes environments for both staging and production use cases, implementing appropriate resource management, network policies, and security controls to ensure robust and scalable application deployment.}
+  \resumeItem{Access Control Systems}
+    {Designed comprehensive RBAC systems across AWS and Kubernetes using Teleport, providing granular access control while maintaining operational efficiency and audit capabilities.}
+  \resumeItem{Observability Frameworks}
+    {Implemented integrated observability solutions combining metrics, logs, and traces to provide comprehensive visibility into system performance and behavior across distributed architectures.}
+\resumeItemListEnd
+
+%-----------CERTIFICATIONS & EDUCATION-----------------
+\section{Certifications \& Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Oregon State University}{Corvallis, OR}
+    {Bachelor of Science in Computer Science, Minor in Psychology}{Fall 2005 -- Spring 2010}
+    \resumeItemListStart
+      \resumeItem{Open Source Lab}
+        {Worked as a Student System Administrator configuring and maintaining services on hosting infrastructure for both internal and community projects.}
+      \resumeItem{Relevant Coursework}
+        {Operating Systems, Algorithms, Data Structures, Software Engineering, Computer Networks, Database Systems, Human-Computer Interaction.}
+    \resumeItemListEnd
+  
+  \resumeSubItem{Kubernetes Certified Application Developer (CKAD)}
+    {Linux Foundation – 2021}
+  \resumeSubItem{Machine Learning Nanodegree}
+    {Udacity – Jan 2017 to Jul 2017; Completed comprehensive coursework including Linear Regression, Neural Networks, Deep Learning, and TensorFlow implementations.}
+  \resumeSubItem{Docker Certified Associate}
+    {Docker – Jun 2018 to Jun 2020 (Expired)}
+  \resumeSubItem{Puppet Professional Certification}
+    {Puppet – May 2015}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL WRITING & DOCUMENTATION-----------------
+\section{Technical Writing \& Documentation}
+\resumeParagraph{
+Throughout my career, I have emphasized the importance of comprehensive documentation, recognizing it as an essential component of successful software development. At OpenGov, I introduced and implemented the DIVIO documentation system, organizing material into tutorials, how-to guides, explanations, and reference documentation to improve accessibility and knowledge transfer. I maintain an extensive personal Obsidian knowledge base and publish technical articles on my blog at https://blog.bmh.io.
+}
+
+%-----------REFERENCES-----------------
+\section{References}
+\resumeParagraph{
+Professional references available upon request.
+}
+
+\end{document}
