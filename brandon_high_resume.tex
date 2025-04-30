@@ -128,7 +128,7 @@
     \resumeItem{Automation}
       {Used Ansible and Python to manage bare metal hardware configuration.}
     \resumeItem{Data Center Ops}
-      {Upgraded frontend systems and network hardware for redundancy.}
+      {Upgraded frontend systems and network hardware for redundancy. Maintained existing Ubuntu Linux systems.}
     \resumeItem{On-Call}
       {Participated in PagerDuty rotation for incident response.}
   \resumeItemListEnd
@@ -138,15 +138,19 @@
   {Staff \& Senior Software Engineer (Delivery Engineering)}{Jul 2020 -- Jan 2024}
   \resumeItemListStart
     \resumeItem{CI/CD Modernization}
-      {Migrated from Jenkins/Spinnaker to GitHub Actions and ArgoCD; built open-source Actions.}
+      {Migrated from Jenkins/Spinnaker to GitHub Actions and ArgoCD; built open-source Actions in Python, TypeScript, and Bash. Ran self-hosted GitHub Actions runners on Kubernetes.}
     \resumeItem{AI \& Internal Tools}
-      {Prototyped PR Review Bot using LangChain; managed OpenAI Org access.}
+      {Prototyped PR Review Bot using TypeScript/LangChain; managed OpenAI Org access.}
     \resumeItem{Access Control}
-      {Architected org-wide RBAC via Terraform for AWS and Kubernetes using Teleport.}
+      {Architected and implemented org-wide RBAC via Terraform/Teleport for AWS and Kubernetes.}
     \resumeItem{Infrastructure as Code}
-      {Built and tested Terraform modules with Terratest (Go).}
+      {Built and tested Terraform modules with Terratest (golang). Built and maintained Org AWS AMIs with Packer.}
+    \resumeItem{Observability \& Monitoring}
+      {Collaborated on internal Grafana "Observability as Code" platform that provided metrics/logs/traces/SLOs/alerts for teams automatically using Terraform triggered via Git. Managed underlying Grafana Cloud, in-cluster agents/Prometheus.}
     \resumeItem{SRE \& Dev Enablement}
-      {Led Kubernetes, Helm, Docker, AWS, and observability efforts; supported on-call via OpsGenie.}
+      {Led Kubernetes, Helm, Docker, AWS, secrets management, security and observability efforts; supported on-call via OpsGenie.}
+    \resumeItem{Open Source}
+      {Attended Kubecon 2023. Contributions to Argo projects, CNCF, Kubernetes, Kustomize.}
   \resumeItemListEnd
 
 \resumeSubheading
@@ -154,7 +158,7 @@
   {Senior Software Engineer (Dev Infrastructure Ops)}{Aug 2018 -- Jul 2020}
   \resumeItemListStart
     \resumeItem{Observability}
-      {Unified logging (FluentD) and tracing with OpenTracing.}
+      {Unified logging (FluentD) and tracing with OpenTracing/OpenTelemetry/Jaeger.}
     \resumeItem{Cloud Migration}
       {Migrated Jenkins and Ruby services to GKE; supported vSphere, Mesos, Docker.}
     \resumeItem{Team Leadership}
@@ -163,10 +167,10 @@
 
 \resumeSubheading
   {Puppet (formerly Puppet Labs)}{Portland, OR}
-  {Software Engineer (Puppet Enterprise Installer)}{Dec 2013 -- Aug 2018}
+  {Software Engineer (Puppet Enterprise Installer/Integration Team)}{Dec 2013 -- Aug 2018}
   \resumeItemListStart
     \resumeItem{Installer \& Orchestrator}
-      {Co-architected GUI Installer and Orchestrator using Ruby/Sinatra.}
+      {Co-architected and implemented GUI Installer and Orchestrator using Ruby/Sinatra. This automated the install, upgrade, and configuration of our enterprise multi-service distributed system in airgapped customer environments. Responsible for integration testing of all Puppet components into this distribution.}
     \resumeItem{Open Source Contributions}
       {Created Chloride SSH library, ruby-pathspec, and rubocop-i18n.}
     \resumeItem{CI Tooling}
@@ -224,6 +228,8 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/kustomize-everything/}{kustomize-everything}}
+      {Suite of GitHub actions for working with Kustomize/GitOps using the Rendered YAML Manifests GitOps pattern.}
     \resumeSubItem{\href{https://github.com/highb/asdf-teleport-ent}{asdf-teleport-ent}}
       {asdf plugin for managing Teleport CLI versions.}
     \resumeSubItem{\href{https://github.com/highb/bad-parrots}{bad-parrots}}
@@ -238,23 +244,23 @@
 \section{Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-      {Ruby, Python, JavaScript, C, Go, Rust, SQL}
+      {Python, Ruby, JavaScript/TypeScript, Bash, C, C++, Go/golang, Rust, SQL, Elixir, Clojure, x86 ASM, Zig, Nim, AWK, Haskell, Lua, PHP, Prolog, Lisp}
     \resumeSubItem{CI/CD}
-      {GitHub Actions, Argo Workflows/CD/Events, CircleCI, Jenkins, Spinnaker}
+      {GitHub Actions, Argo Workflows, ArgoCD, Argo Events, CircleCI, Jenkins, Spinnaker}
     \resumeSubItem{Infrastructure \& Automation}
       {Terraform, Kubernetes, Helm, Kustomize, Ansible, Puppet, Docker}
     \resumeSubItem{Cloud}
       {AWS, GCP}
     \resumeSubItem{Observability \& Monitoring}
-      {Prometheus, Grafana, Elasticsearch, Kibana, FluentD, OpenTracing, Sensu, Munin}
+      {Prometheus, Grafana, Elasticsearch, Kibana, FluentD, OpenTracing, OpenTelemetry, Sensu, Munin}
     \resumeSubItem{Security \& Access Control}
       {RBAC, Teleport, IAM (AWS)}
     \resumeSubItem{AI/LLM}
       {OpenAI API, OLlama, LangChain}
     \resumeSubItem{Testing \& Dev Tools}
-      {Terratest (Go), Git, VSCode, Groovy (Jenkins Pipelines)}
+      {Terratest (Golang), Git, VSCode, Vim, Groovy (Jenkins Pipelines)}
     \resumeSubItem{Operating Systems}
-      {Ubuntu, Debian, CentOS, Arch Linux, Gentoo, macOS, Windows, Raspbian}
+      {Linux (Ubuntu/Debian/CentOS/Arch Linux/Gentoo/Raspbian), macOS, Windows}
   \resumeSubHeadingListEnd
 
 
